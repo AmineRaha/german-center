@@ -1,8 +1,11 @@
+:root{
+  --font-base: "DM Sans", sans-serif;
+}
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,Noto Sans, sans-serif;
+    font-family: var(--font-base);
   }
