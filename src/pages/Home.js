@@ -1,17 +1,28 @@
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Grid, Stack, Typography } from '@mui/material'
+import { createTheme } from '@mui/system';
 import React from 'react'
 import { motion } from "framer-motion";
+import { height } from '@mui/system';
+import Welcome from '../components/Welcome';
+import About from '../components/About';
+import Numbers from '../components/Numbers';
+import Section3 from '../components/Section3';
+import Section4 from '../components/Section4';
+import Section5 from '../components/Section5';
+
+
 
 const Home = () => {
   return (
-    <Stack alignItems="center" height={"89vh"} justifyContent={"center"} sx={{backgroundImage: `url(${"https://picsum.photos/1920/1080"})`}}  >
-      <motion.div
-        initial={{ y:'20', opacity: 0}}
-        animate={{y:0, opacity: 1}}
-        transition={{ duration: 1.2 }}
-      >
-        <Typography variant='h1' sx={{ fontWeight: "bold"}}>German Center</Typography>
-      </motion.div>
+    <Stack alignItems="center" justifyContent={"center"}  >
+
+      <Welcome/>
+      <About/>
+      <Numbers/>
+      <Section3/>
+      <Section4/>
+      <Section5/>
+
     </Stack>
   )
 }
