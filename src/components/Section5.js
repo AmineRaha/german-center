@@ -4,15 +4,13 @@ import { motion } from 'framer-motion'
 
 const Section5 = () => {
   return (
-    <section style={{width:"100%", backgroundColor: "white", paddingTop:"50px", paddingBottom:"70px"}}>
-    <Stack direction="row-reverse" justifyContent="space-evenly" spacing={0} py={5} sx={{ overflowX: "visible"}}>
+    <section style={{width:"100%", backgroundColor: "white", paddingTop:"50px", paddingBottom:"50px"}}>
+    <Stack direction="row" justifyContent="space-evenly" spacing={0} py={5} sx={{ overflowX: "visible"}}>
 
-        <Stack width={"80%"}>
-        <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px"}}/>
-        </Stack>
+        
 
-        <Stack xs={6} justifyContent="center" width={"100%"} sx={{ zIndex:"1", marginRight: "-20%", marginLeft: "30%" }}>
-          <div style={{backgroundColor: "#eeeded", padding:"70px 50px 50px 50px", width: "650px"}}>
+        <Stack xs={6} justifyContent="center" width={"100%"} sx={{ zIndex:"1", position: "relative"}}>
+          <div style={{backgroundColor: "#eeeded", padding:"70px 50px 50px 50px", minWidth: "650px", position: "absolute", right: "-20%", maxWidth: "1400px", marginLeft: "50px"}}>
 
             <Typography  color="secondary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
               initial={{ y:50, opacity: 0}}
@@ -39,6 +37,10 @@ const Section5 = () => {
               <Typography ml={"60px"} variant='button' color="secondary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
             </motion.div>
           </div>
+        </Stack>
+
+        <Stack width={"80%"} sx={{overflowX: "hidden"}}>
+        <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px", objectFit: "cover"}}/>
         </Stack>
 
     </Stack>
