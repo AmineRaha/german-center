@@ -5,16 +5,16 @@ import { motion } from 'framer-motion'
 const Section6 = () => {
   return (
     <section style={{width:"100%", backgroundColor: "white", paddingTop:"20px", paddingBottom:"70px"}}>
-    <Stack direction="row" justifyContent="center" spacing={0} py={5} sx={{ overflowX: "visible", height:"550px"}}>
+    <Stack direction="row" justifyContent="center" spacing={0} py={5} sx={{ overflowX: "clip", height:"550px"}}>
 
         <Stack width={"100%"}>
             <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "100%", objectFit: "cover"}}/>
         </Stack>
 
         <Stack justifyContent="center" width={"100%"} height={"100%"}>
-          <div style={{backgroundColor: "#eeeded", padding:"70px 50px 50px 50px", maxWidth: "1400px", minWidth:"650px", height:"100%"}}>
+          <div style={{backgroundColor: "#daebff", padding:"70px 50px 50px 50px", maxWidth: "1400px", height:"100%"}}>
 
-            <Typography  color="secondary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
+            <Typography  color="primary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
               initial={{ y:50, opacity: 0}}
               whileInView={{ y:0, opacity: 1}}
               transition={{ duration: 1, type: "just"}}
@@ -36,7 +36,7 @@ const Section6 = () => {
             >
               <div  style={{ content: "", position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px"}}></div>
               <Typography ml={"60px"} mb={"0.9rem"}  sx={{overflowWrap: "normal", fontSize: "15px" , color: "black"}} variant='body1'>Die DEUTSCHE FINANCE GROUP als internationale Investmentgesellschaft hat sich in ihrem institutionellen Netzwerk seit vielen Jahren als ein erfahrener und zuverlässiger institutioneller Investmentmanager etabliert. Institutionelle Investoren wie Pensionskassen, Versorgungswerke, Stiftungen und Universitäten nehmen daher den direkten Kontakt zur DEUTSCHE FINANCE GROUP für die Realisierung von interessanten und renditestarken Immobilienprojekten auf. </Typography>
-              <Typography ml={"60px"} variant='button' color="secondary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
+              <Typography ml={"60px"} variant='button' color="primary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
             </motion.div>
           </div>
         </Stack>

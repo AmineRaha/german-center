@@ -11,6 +11,7 @@ import Section4 from '../components/Section4';
 import Section5 from '../components/Section5';
 import Section6 from '../components/Section6';
 import Team from '../components/Team';
+import { Contact } from '../components/Contact';
 
 
 
@@ -26,6 +27,7 @@ const Home = () => {
       <Section5/>
       <Section6/>
       <Team/>
+      <Contact/>
 
     </Stack>
   )

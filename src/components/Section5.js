@@ -10,9 +10,9 @@ const Section5 = () => {
         
 
         <Stack xs={6} justifyContent="center" width={"100%"} sx={{ zIndex:"1", position: "relative"}}>
-          <div style={{backgroundColor: "#eeeded", padding:"70px 50px 50px 50px", minWidth: "650px", position: "absolute", right: "-20%", maxWidth: "1400px", marginLeft: "50px"}}>
+          <div style={{backgroundColor: "#daebff", padding:"70px 50px 50px 50px", minWidth: "650px", position: "absolute", right: "-20%", maxWidth: "1400px", marginLeft: "50px"}}>
 
-            <Typography  color="secondary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
+            <Typography  color="primary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
               initial={{ y:50, opacity: 0}}
               whileInView={{ y:0, opacity: 1}}
               transition={{ duration: 1, type: "just"}}
@@ -34,7 +34,7 @@ const Section5 = () => {
             >
               <div  style={{ content: "", position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px"}}></div>
               <Typography ml={"60px"} mb={"0.9rem"}  sx={{overflowWrap: "normal", fontSize: "15px" , color: "black"}} variant='body1'>Die DEUTSCHE FINANCE GROUP verfügt über langjährige Erfahrung in der Finanzdienstleistung und über eine exzellente Fachkompetenz im Bereich der institutionellen Kapitalanlage. Zur Kernkompetenz im Bereich Financial Services gehört das Marketing- und die Platzierung von institutionellen Finanzstrategien bei privaten, professionellen und institutionellen Investoren. </Typography>
-              <Typography ml={"60px"} variant='button' color="secondary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
+              <Typography ml={"60px"} variant='button' color="primary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
             </motion.div>
           </div>
         </Stack>

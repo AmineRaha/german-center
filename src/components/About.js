@@ -34,14 +34,14 @@ const About = () => {
               animate={Stack1Anim.animate}
               transition={Stack1Anim.transition}
             >
-              <Stack backgroundColor={"black"} mr={2} pt={"70px"} pb={"50px"} pr={"50px"} pl={"50px"} width={"600px"} sx={{width:{md:"1000px", lg:'600px'}}}>
-                <Typography color="primary" mb={"20px"} sx={{ fontWeight: "600"}}>GROUP</Typography>
+              <Stack backgroundColor={"#040e2d"} mr={2} pt={"70px"} pb={"50px"} pr={"50px"} pl={"50px"} width={"600px"} sx={{width:{md:"1000px", lg:'600px'}}}>
+                <Typography color="secondary" mb={"20px"} sx={{ fontWeight: "600"}}>GROUP</Typography>
                 <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600", lineHeight: "1.2em", letterSpacing:"7px"}}>DEUTSCHE <br/>FINANCE <br/>GROUP</Typography>
                 <div style={{position: "relative", marginBottom: "10px"}}>
                   <div  style={{ content: "", position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px"}}></div>
                   <Typography ml={"60px"} mb={"0.9rem"}  sx={{overflowWrap: "normal", fontSize: "15px" , color: "white"}} variant='body1'>Die DEUTSCHE FINANCE GROUP ist eine internationale Investmentgesellschaft und bietet Investoren Zugang zu institutionellen Märkten und exklusiven Investments in den Bereichen Private Equity Real Estate, Immobilien und Infrastruktur.</Typography>
                   <Typography ml={"60px"} mb={"20px"} sx={{overflowWrap: "normal", fontSize: "15px", color: "white"}} variant='body1'>Mit der DEUTSCHE FINANCE GROUP investieren Investoren seit über 17 Jahren verantwortungsvoll und erfolgreich in internationale Marktchancen- dort wo sie entstehen!</Typography>
-                  <Typography ml={"60px"} variant='button' color="primary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
+                  <Typography ml={"60px"} variant='button' color="secondary" sx={{fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
                 </div>
                 
               </Stack>
