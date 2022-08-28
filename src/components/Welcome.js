@@ -1,10 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { Stack, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
 import logo from "../assets/images/logo3.png";
 
 const Welcome = () => {
+
+  const {t} = useTranslation();
 
   const parentVarient={
 
@@ -38,7 +41,7 @@ const Welcome = () => {
           <Typography  variant='h1' color="primary" sx={{fontSize:{xl:"6rem", lg: "9vh",xs:"9vh"}, textAlign:"center"}} component={motion.div} 
             variants={childVarient}
           >
-            WILLKOMMEN IM
+            {t("welcome")}
           </Typography>
           <motion.img variants={childVarient} src={logo} alt="logo" style={{width: "40%", height:'100%', margin: '0 20px'}} />
         </Stack>

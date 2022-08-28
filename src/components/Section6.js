@@ -7,7 +7,7 @@ const Section6 = () => {
     <section style={{width:"100%", backgroundColor: "white", paddingTop:"20px", paddingBottom:"70px"}}>
     <Stack direction="row" justifyContent="center" spacing={0} py={5} sx={{ overflowX: "clip", height:"550px"}}>
 
-        <Stack width={"100%"}>
+        <Stack sx={{ width: {md:"30%", lg:"100%"}}}>
             <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "100%", objectFit: "cover"}}/>
         </Stack>
 

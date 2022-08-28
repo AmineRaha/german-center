@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from  'react-router-dom';
-import { Box, createTheme, ThemeProvider } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
@@ -25,6 +25,7 @@ const theme = createTheme({
 });
 
 const App = () => {
+
   return (
     <ThemeProvider theme={theme}>
         <Navbar />

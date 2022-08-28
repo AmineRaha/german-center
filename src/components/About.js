@@ -27,14 +27,14 @@ const About = () => {
 
   return (
     <section style={{width:"100%", backgroundColor: "white"}}>
-    <Stack  direction="row" justifyContent="center" spacing={2} sx={{ overflowX: "visible", marginBottom:{sm:"0",md:"50px",lg:"180px"}, marginTop:{sm:"0",md:"50px", lg:"0"}}}>
+    <Stack  direction="row" justifyContent="center" spacing={2} sx={{ overflowX: "clip", marginBottom:{sm:"0",md:"50px",lg:"180px"}, marginTop:{sm:"0",md:"50px", lg:"0"}}}>
 
             <Stack component={motion.div} zIndex={1} sx={{ overflowX: "clip", marginTop:{ md:"0", lg:"-50px"}}}
               initial={Stack1Anim.initial}
               animate={Stack1Anim.animate}
               transition={Stack1Anim.transition}
             >
-              <Stack backgroundColor={"#040e2d"} mr={2} pt={"70px"} pb={"50px"} pr={"50px"} pl={"50px"} width={"600px"} sx={{width:{md:"1000px", lg:'600px'}}}>
+              <Stack backgroundColor={"#040e2d"} pt={"70px"} pb={"50px"} pr={"50px"} pl={"50px"} width={"600px"} sx={{width:{md:"1000px", lg:'600px'}, marginRight:{md:0, lg:2}}}>
                 <Typography color="secondary" mb={"20px"} sx={{ fontWeight: "600"}}>GROUP</Typography>
                 <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600", lineHeight: "1.2em", letterSpacing:"7px"}}>DEUTSCHE <br/>FINANCE <br/>GROUP</Typography>
                 <div style={{position: "relative", marginBottom: "10px"}}>
@@ -48,7 +48,7 @@ const About = () => {
             </Stack>
 
 
-            <Stack mt={"-50px"} component={motion.div} zIndex={0} sx={{ overflowX: "hidden", display:{xs:"none", md:"none" , lg:"block"} }}
+            <Stack mt={"-50px"} component={motion.div} zIndex={0} sx={{ overflowX: "clip", display:{xs:"none", md:"none" , lg:"block"} }}
               initial={{ x:500, opacity: 0}}
               animate={{ x:0, opacity: 1}}
               transition={{ duration: 1.5, type: "just", delay: 0.6 }}

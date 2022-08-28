@@ -11,7 +11,7 @@ const Team = () => {
 
         visible:{
             transition:{
-                delay: 0.2,
+                delay: 0.3,
                 staggerChildren: 0.2,
                 when: "beforeChildren"
                 

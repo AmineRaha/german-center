@@ -1,22 +1,23 @@
 import React from 'react'
-import { Card, Grid, IconButton, Stack, Typography } from '@mui/material'
+import { Card, Grid, IconButton, Stack, Typography, useMediaQuery } from '@mui/material'
 import { motion } from "framer-motion";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import MailIcon from '@mui/icons-material/Mail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import AccessTime from '@mui/icons-material/AccessTime';
-import Map from './Map';
 
 export const Contact = () => {
+
+    const md = useMediaQuery('(min-width:900px)');
+    const lg = useMediaQuery('(min-width:1200px)');
 
     const parentVarient={
 
         visible:{
             transition:{
-                delay: 0.2,
+                delay: 0,
                 staggerChildren: 0.2,
                 when: "beforeChildren"
                 
@@ -24,8 +25,8 @@ export const Contact = () => {
         }
     };
 
-    const adresseVarient={
-        
+    const adresseVarient= lg
+    ? {
         visible:{
             x: [-100,50],
             opacity:[0,1],
@@ -33,10 +34,19 @@ export const Contact = () => {
                 ease: "easeOut", duration: 1 
             }
         }
+    }
+    : {
+        visible:{
+            x: [-100,0],
+            opacity:[0,1],
+            transition:{
+                ease: "easeOut", duration: 1 
+            }
+        }
     };
 
-    const contactVarient={
-        
+    const contactVarient=lg 
+    ? {
         visible:{
             x: [-150,0],
             y: [100,100],
@@ -45,13 +55,33 @@ export const Contact = () => {
                 ease: "easeOut", duration: 1 
             }
         }
+    }
+    : {
+        visible:{
+            x: [-100,0],
+            opacity:[0,1],
+            transition:{
+                ease: "easeOut", duration: 1 
+            }
+        }
     };
 
-    const openVarient={
+    const openVarient= lg
+    ? {
         
         visible:{
             x: [-250,-50],
             y: [180,180],
+            opacity:[0,1],
+            transition:{
+                ease: "easeOut", duration: 1 
+            }
+        }
+    }
+    : {
+        
+        visible:{
+            x: [-100,0],
             opacity:[0,1],
             transition:{
                 ease: "easeOut", duration: 1 
@@ -70,9 +100,8 @@ export const Contact = () => {
                 whileInView="visible"
             >
 
-                <Grid item xs={4} component={motion.div}
+                <Grid item md={12} lg={4} component={motion.div} sx={{width:"100%"}}
                     variants={adresseVarient}
-                    visible={{x:[-100,-50]}}
                 >
                     <Card sx={{paddingX: "35px", paddingY:"20px",backgroundColor:"#daebff"}}>
                         <Stack>
@@ -86,7 +115,7 @@ export const Contact = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={4} component={motion.div}
+                <Grid item md={12} lg={4} component={motion.div} sx={{width:"100%"}}
                     variants={contactVarient}
                 >
                     <Card sx={{paddingX: "35px", paddingY:"20px",backgroundColor:"#a7b9ff"}}>
@@ -110,7 +139,7 @@ export const Contact = () => {
                     </Card>
                 </Grid>
 
-                <Grid item xs={4} component={motion.div}
+                <Grid item md={12} lg={4} component={motion.div} sx={{width:"100%"}}
                     variants={openVarient}
                 >
                     <Card sx={{paddingX: "35px", paddingY:"20px",backgroundColor:"#7589cc"}}>
