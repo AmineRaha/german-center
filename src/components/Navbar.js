@@ -42,22 +42,22 @@ const Navbar = () => {
 
   return (
     <>
-    <Box sx={{height: {md:"80px", lg:'100px'}, position: { md:"static", lg:"fixed"}}} style={{ width: "100%", padding: "0.5rem 2rem", background: "rgba(220, 220, 220, 0.25)", backdropFilter: "blur(4px)", WebkitBackdropFilter: "blur(4px)",border: "1px solid rgba(0, 0, 0, 0.18)", zIndex: 2}}>
-        <Stack direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{ gap: { sm: '122px', xs: "40px" } }} px="20px">
+    <Box sx={{height: {md:"80px", lg:'100px'}, position: { md:"static", lg:"fixed"}, padding: {xs:"0.5rem 0",md:"0.5rem 2rem"} }} style={{ width: "100%", background: "rgba(220, 220, 220, 0.25)", backdropFilter: "blur(4px)", WebkitBackdropFilter: "blur(4px)",border: "1px solid rgba(0, 0, 0, 0.18)", zIndex: 2}}>
+        <Stack direction="row" justifyContent={"space-between"} alignItems={"center"} sx={{ gap: { sm: '122px', xs: "40px" }, paddingX:{xs:"0", md:"20px"} }} px="20px">
             <Link to="/" >
-                <Box sx={{width: {md:"200px", lg:"260px"}}} style={{ height:'100%', margin: '0 20px'}}>
-                    <img src={logo} alt="logo" style={{width: '100%', height:'100%', margin: '0 20px'}} />
+                <Box sx={{width: {xs:"150px",md:"200px", lg:"260px"}}} style={{ height:'100%', margin: '0 20px'}}>
+                    <img src={logo} alt="logo" style={{width: '100%', height:'100%', margin: '0'}} />
                 </Box>
             </Link>
-
+            
             <ul className='app__navbar-links right'>
                 <li key="de" className={`app__flex p-text ${"de" === currentLang ? 'disabled' :""}`}><div />
-                <button style={{ fontSize:"19px"}}
+                <Button sx={{fontSize:{xs:"12px" ,sm:"19px"}}}
                     onClick={() => i18n.changeLanguage('de')}
                     disabled={'de' === currentLang}
                 >
                     Deutsch
-                </button>
+                </Button>
                 </li>
                 <li key="ar" className={`app__flex p-text ${"ar" === currentLang ? 'disabled' : ""}`}><div />
                 <button style={{ fontSize:"20px"}}
