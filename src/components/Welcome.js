@@ -38,12 +38,14 @@ const Welcome = () => {
           viewport={{ once: true }}
           whileInView="visible"
         >
-          <Typography  variant='h1' color="primary" sx={{fontSize:{xs:"10vw",md:"9vw"}, textAlign:"center"}} component={motion.div} 
+          <Typography  variant='h1' color="primary" sx={{fontSize:{xs:"25px",sm:"40px",md:"55px",lg:"60px",xl:"90px"}, textAlign:"center"}} component={motion.div} 
             variants={childVarient}
           >
             {t("welcome")}
           </Typography>
-          <motion.img variants={childVarient} src={logo} alt="logo" style={{width: "70vw", height:'100%', margin: '0 20px'}} />
+          <Box sx={{width:{xs:"200px", sm:"360px", md:"500px",lg:"550px",xl:"750px"}}}>
+            <motion.img variants={childVarient} src={logo} alt="logo" style={{width: "100%", height:'100%', margin: '0 0px'}} />
+          </Box>
         </Stack>
       </Box>
   )

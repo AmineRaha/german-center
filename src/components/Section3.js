@@ -13,7 +13,7 @@ const Section3 = () => {
             <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px", objectFit: "cover"}}/>
           </Stack>
 
-          <Stack xs={6} justifyContent="center" width={"100%"} sx={{ zIndex:"1", marginLeft: {md:"0",lg:"-20%" }}}>
+          <Stack xs={12} justifyContent="center" width={"100%"} sx={{ zIndex:"1", marginLeft: {md:"0",lg:"-20%" }}}>
             <div style={{backgroundColor: "#daebff", padding:"70px 50px 50px 50px", maxWidth: "1400px", marginRight:{md:"0",lg:"50px" }}}>
 
               <Typography  color="primary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}

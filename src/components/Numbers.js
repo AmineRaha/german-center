@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 
 const Numbers = () => {
 
-    const largeScreen = useMediaQuery(theme => theme.breakpoints.up('md'));
+const largeScreen = useMediaQuery(theme => theme.breakpoints.up('md'));
 
   return (
 
