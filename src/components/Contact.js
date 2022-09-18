@@ -90,11 +90,11 @@ export const Contact = () => {
     };
 
   return (
-    <section style={{ backgroundColor: "white", width: "100%", paddingTop:"100px", paddingBottom:"70px"}}>
-        <Stack direction="column" justifyContent="center" alignItems="center" sx={{paddingX: 7}}>
-            <Typography variant='h2' sx={{color: "black", fontWeight: "600",fontSize: "46px", lineHeight: "1.2em", letterSpacing:"7px", marginBottom: 5}}>KONTAKT</Typography>
+    <section style={{ backgroundColor: "white", width: "100%", paddingTop:"100px", paddingBottom:{sm:'20px',md:"70px"}}}>
+        <Stack direction="column" justifyContent="center" alignItems="center" sx={{paddingX: {xs:1, sm:3, md:4, lg:5}}}>
+            <Typography variant='h2' sx={{color: "black", fontWeight: "600", lineHeight: "1.2em", letterSpacing:"7px", marginBottom: 5, fontSize:{xs:"2.5rem", sm:"2.5rem", md:"3rem"}}}>KONTAKT</Typography>
 
-            <Grid container justifyContent="center" alignItems="center" spacing={4} component={motion.div} sx={{marginBottom: "220px"}}
+            <Grid container justifyContent="center" alignItems="center" spacing={4} component={motion.div} sx={{marginBottom: {xs:"50px",sm:"50px", md:"220px"}}}
                 viewport={{ once: true }}
                 variants={parentVarient}
                 whileInView="visible"

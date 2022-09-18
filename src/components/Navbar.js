@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Stack, Menu, MenuItem, Grid, Typography, Drawer, Button, ListItem, ListItemIcon, ListItemText, Box, List } from '@mui/material'
+import { Stack, Menu, MenuItem, Grid, Typography, Drawer, Button, ListItem, ListItemIcon, ListItemText, Box, List, useMediaQuery } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import Cookies from 'js-cookie';
 
@@ -40,6 +40,8 @@ const Navbar = () => {
     const {t} = useTranslation();
     const currentLang=Cookies.get('i18next') || 'de';
 
+    const largeScreen = useMediaQuery(theme => theme.breakpoints.up('sm'));
+
   return (
     <>
     <Box sx={{height: {md:"70px", lg:'80px',xl:"100px"}, position: { md:"static", lg:"fixed"}, padding: {xs:"0.5rem 0",md:"0.5rem 2rem"} }} style={{ width: "100%", background: "rgba(220, 220, 220, 0.25)", backdropFilter: "blur(4px)", WebkitBackdropFilter: "blur(4px)",border: "1px solid rgba(0, 0, 0, 0.18)", zIndex: 2}}>
@@ -52,20 +54,20 @@ const Navbar = () => {
             
             <ul className='app__navbar-links right'>
                 <li key="de" className={`app__flex p-text ${"de" === currentLang ? 'disabled' :""}`}><div />
-                <Button sx={{fontSize:{xs:"12px" ,sm:"19px"}}}
+                <Button sx={{fontSize:{xs:"15px" ,sm:"19px"}}}
                     onClick={() => i18n.changeLanguage('de')}
                     disabled={'de' === currentLang}
                 >
-                    Deutsch
+                    {largeScreen?"Deutsch":"DE"}
                 </Button>
                 </li>
                 <li key="ar" className={`app__flex p-text ${"ar" === currentLang ? 'disabled' : ""}`}><div />
-                <button style={{ fontSize:"20px"}}
+                <Button sx={{fontSize:{xs:"15px" ,sm:"19px"}}}
                     onClick={() => i18n.changeLanguage('ar')}
                     disabled={'ar' === currentLang}
                 >
-                    العربية
-                </button>
+                    {largeScreen?"العربية":"AR"}
+                </Button>
                 </li>
             </ul>
             {/*<Button color='primary' variant='contained' onClick={() => setOpen(true)} p={0} sx={{height: "45px"}}><MenuIcon color="secondary" sx={{fontSize: "32px"}}/></Button>*/}

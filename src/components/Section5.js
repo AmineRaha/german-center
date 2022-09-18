@@ -5,10 +5,10 @@ import { motion } from 'framer-motion'
 const Section5 = () => {
   return (
     <section style={{width:"100%", backgroundColor: "white", paddingTop:"50px", paddingBottom:"50px"}}>
-      
     <Stack direction="row" justifyContent="space-evenly" spacing={0} py={5} sx={{ overflowX: "clip"}}>
-        <Stack xs={6} justifyContent="center" width={"100%"} sx={{ zIndex:"1", position: "relative"}}>
-          <Box sx={{backgroundColor: "#daebff", padding:{md:"70px 20px 20px 50px", lg:"70px 50px 50px 50px"}, maxWidth: "1400px", position: "absolute", right: {md:"0",lg:"-20%"}, marginLeft: {md:"0",lg:"50px"}, marginTop:"250px"}}>
+      
+        <Stack xs={6} direction="row" justifyContent="flex-end" alignItems="center" width={"100%"} sx={{ zIndex:"1", position: "relative", marginRight: {md:"0",lg:"-20%" }}}>
+        <div style={{backgroundColor: "#daebff", padding:"70px 50px 50px 50px", maxWidth: "1400px", marginRight:{md:"0",lg:"50px" }}}>
 
             <Typography  color="primary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
               initial={{ y:50, opacity: 0}}
@@ -34,11 +34,11 @@ const Section5 = () => {
               <Typography mb={"0.9rem"}  sx={{marginLeft:{xs: "0", sm: "60px"},overflowWrap: "normal", fontSize: "15px" , color: "black"}} variant='body1'>Die DEUTSCHE FINANCE GROUP verfügt über langjährige Erfahrung in der Finanzdienstleistung und über eine exzellente Fachkompetenz im Bereich der institutionellen Kapitalanlage. Zur Kernkompetenz im Bereich Financial Services gehört das Marketing- und die Platzierung von institutionellen Finanzstrategien bei privaten, professionellen und institutionellen Investoren. </Typography>
               <Typography variant='button' color="primary" sx={{marginLeft:{xs: "0", sm: "60px"},fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
             </motion.div>
-          </Box>
+          </div>
         </Stack>
 
         <Stack width={"80%"} sx={{overflowX: "hidden", display:{xs:"none", md:"none" , lg:"block"}}}>
-          <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px", objectFit: "cover"}}/>
+          <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px",width:"100%", objectFit: "cover"}}/>
         </Stack>
 
     </Stack>

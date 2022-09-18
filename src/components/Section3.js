@@ -10,7 +10,7 @@ const Section3 = () => {
       <Stack direction="row" justifyContent="space-evenly" spacing={0}  sx={{ overflowX: "clip", paddingTop:{md:'0px',lg:"70px"}, paddingBottom:{md:'20px', lg:"70px"}}}>
 
           <Stack width={"80%"} sx={{display:{xs:"none", md:"none" , lg:"block"}}}>
-            <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px", objectFit: "cover"}}/>
+            <img src='https://picsum.photos/700/550' alt="section3pic" style={{height: "550px", width:"100%",objectFit: "cover"}}/>
           </Stack>
 
           <Stack xs={12} justifyContent="center" width={"100%"} sx={{ zIndex:"1", marginLeft: {md:"0",lg:"-20%" }}}>

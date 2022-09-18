@@ -91,7 +91,12 @@
     }
 
     @media screen and (max-width: 900px){
-        //display: none;
+        li{
+            margin: 0;
+            div{
+                margin: 0;
+            }
+        }
     }
 }
 

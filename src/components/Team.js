@@ -34,7 +34,7 @@ const Team = () => {
   return (
     <section style={{ backgroundColor: "#eeeded", width: "100%", paddingTop:"50px", paddingBottom:"50px"}}>
         <Stack justifyContent="center" alignItems="center">
-            <Typography variant='h2' sx={{color: "black", fontWeight: "600",fontSize: "46px", lineHeight: "1.2em", letterSpacing:"7px", marginBottom: 5}}>PARTNER VORSTAND</Typography>
+            <Typography variant='h2' sx={{color: "black", fontWeight: "600", lineHeight: "1.2em", letterSpacing:"7px", marginBottom: 5, textAlign:"center", fontSize:{xs:"2rem", sm:"2rem", md:"3rem"}}}>PARTNER VORSTAND</Typography>
             <Grid container justifyContent="center" alignItems="center" spacing={4} component={motion.div}
                 viewport={{ once: true }}
                 variants={parentVarient}
