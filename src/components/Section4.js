@@ -1,17 +1,41 @@
 import React from 'react'
-import { Container, Stack, Typography } from '@mui/material'
-import { motion } from 'framer-motion'
+import { Box, Container, Fade, IconButton, Modal, Stack, Typography, Backdrop } from '@mui/material'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 
 const Section4 = () => {
+
+  const {t} = useTranslation();
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const modalStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: { xs:"100%", sm:"90%",md:"80%" },
+    bgcolor: '#040e2d',
+    border: '0',
+    
+    boxShadow: 24,
+    p: {xs:1, sm:2, md:4},
+    direction: i18n.language === "ar" ? "rtl" : "ltr"
+  };
+
   return (
     <section style={{width:"100%", backgroundColor: "#040e2d", paddingTop:"50px"}}>
-        <Stack direction="column" justifyContent="space-evenly" spacing={0} p={5} sx={{ overflowX: "visible"}}>
-            <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600", lineHeight: "1.2em", letterSpacing:"7px", fontSize:{xs:"1.5rem", sm:"2rem", md:"3rem"}}} component={motion.div}
+        <Stack direction="column" justifyContent="space-evenly" spacing={0} p={5} sx={{ overflowX: "visible", direction: i18n.language === "ar" ? "rtl" : "ltr"}}>
+            <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600", lineHeight: "1.2em", letterSpacing: i18n.language === "ar" ? "0px" : "7px", textTransform: "uppercase", fontSize:{xs:"1.5rem", sm:"2rem", md:"3rem"}}} component={motion.div}
                 initial={{ y:40, opacity: 0}}
                 whileInView={{ y:0, opacity: 1}}
                 transition={{ duration: 1, type: "just"}}
                 viewport={{ once: true }}
-            >IMMOBILIEN INVESTMENTS</Typography>
+            >{t("section4_title")}</Typography>
             <Stack>
                 <motion.div style={{position: "relative", marginBottom: "10px"}}
                 initial={{ y:50, opacity: 0}}
@@ -20,10 +44,41 @@ const Section4 = () => {
                 viewport={{ once: true }}
                 >
                 <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"} }} />
-                <Typography mb={"20px"} sx={{ marginLeft:{xs: "0", sm: "60px"}, overflowWrap: "normal", fontSize: "15px", color: "white"}} variant='body1'>Alternative Immobilienarten wie Health Care, Student Housing oder der Sektor Logistik erfahren im Rahmen der internationalen Investitionsstrategie ein zunehmendes Interesse von institutionellen Investoren. Des Weiteren zählen insbesondere Lab-Offices aufgrund der seit Jahren weltweit steigenden Forschungsaktivitäten von Impfstoffen und Arzneimitteln zu der wachsenden alternativen Assetklasse „Life-Science Immobilien“ und gelten bei institutionellen Investoren als ein Immobilieninvestment der Zukunft. Welche wesentliche Position die wachsende neue Assetklasse „Lab-Offices“ in einem zukunftsorientierten Anlageportfolio für Investoren einnimmt, darüber spricht Prof. Dr. John Davidson, Group Research Officer der DEUTSCHE FINANCE GROUP.</Typography>
-                <Typography variant='button' color="secondary" sx={{marginLeft:{xs: "0", sm: "60px"}, fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>Interview</Typography>
+                <Typography mb={"0.9rem"} sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, overflowWrap: "normal", fontSize: i18n.language === "ar" ? "19px":"16px", color: "white"}} variant='body1'> {t("section4_text1")} </Typography>
+                <Stack direction="row" justifyContent="flex-start" alignItems="center" onClick={handleOpen} sx={{"&:hover": {cursor:"pointer"}}}>
+                      <Typography variant='button' color="secondary" sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, textTransform:"uppercase", fontSize: i18n.language === "ar" ? "20px":"16px", fontWeight:"500", letterSpacing: i18n.language === "ar" ? "0px" : "3px"}}>{t("read_more")}</Typography>
+                      <IconButton aria-label="delete" color="secondary" >
+                        <KeyboardArrowDownIcon sx={{rotate: i18n.language === "ar" ? "90deg" : "-90deg"}}/>
+                      </IconButton>
+                </Stack>
                 </motion.div>
             </Stack>
+
+            <Modal 
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{
+                  timeout: 500,
+                }}
+              >
+                <Fade in={open}>
+                  <Box sx={modalStyle}>
+                    <Stack backgroundColor={"#040e2d"} pt={"20px"} pb={"20px"} pr={"30px"} pl={"20px"} sx={{width:"100%", marginRight:{md:0, lg:2}}}>
+
+                      <div style={{position: "relative", marginBottom: "10px"}}>
+                        <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"} }} />
+                        <Typography mb={"0.9rem"} sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, overflowWrap: "normal", fontSize: "17px", color: "white"}} variant='body1'> {t("section4_readmore_text1")}</Typography>
+                        <Typography mb={"0"} sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, overflowWrap: "normal", fontSize: "17px", color: "white"}} variant='body1'>{t("section4_readmore_text2")}</Typography>
+                      </div>
+                  
+                  </Stack>
+                  </Box>
+                </Fade>
+              </Modal>
             
         </Stack>
     </section>

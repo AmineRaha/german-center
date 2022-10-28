@@ -65,6 +65,7 @@ const Navbar = () => {
                 <Button sx={{fontSize:{xs:"15px" ,sm:"19px"}}}
                     onClick={() => i18n.changeLanguage('ar')}
                     disabled={'ar' === currentLang}
+                    
                 >
                     {largeScreen?"العربية":"AR"}
                 </Button>

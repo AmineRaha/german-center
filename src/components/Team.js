@@ -14,10 +14,8 @@ const Team = () => {
                 delay: 0.3,
                 staggerChildren: 0.2,
                 when: "beforeChildren"
-                
             }
         }
-        
     }
 
     const childVarient={

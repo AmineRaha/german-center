@@ -41,12 +41,12 @@ const Welcome = () => {
           <Typography  variant='h1' color="primary" sx={{fontSize:{xs:"25px",sm:"40px",md:"55px",lg:"60px",xl:"80px"}, textAlign:"center"}} component={motion.div} 
             variants={childVarient}
           >
-            {t("welcome")}
+            
           </Typography>
           <Box sx={{width:{xs:"200px", sm:"360px", md:"500px",lg:"550px",xl:"650px"}}}>
             <motion.img variants={childVarient} src={logo} alt="logo" style={{width: "100%", height:'100%', margin: '0 0px'}} />
           </Box>
-          <Typography  variant='h1' color="primary" sx={{fontSize:{xs:"25px",sm:"40px",md:"55px",lg:"60px",xl:"80px"}, textAlign:"center", textTransform:"uppercase", marginTop:"10px"}} component={motion.div} 
+          <Typography  variant='h1' color="white" sx={{fontSize:{xs:"25px",sm:"40px",md:"55px",lg:"60px",xl:"80px"}, fontWeight:"700", textAlign:"center", textTransform:"uppercase", marginTop:"10px"}} component={motion.div} 
             variants={childVarient}
           >
             {t("wir_verbinden")}

@@ -10,19 +10,13 @@ const Section5 = () => {
         <Stack xs={6} direction="row" justifyContent="flex-end" alignItems="center" width={"100%"} sx={{ zIndex:"1", position: "relative", marginRight: {md:"0",lg:"-20%" }}}>
         <div style={{backgroundColor: "#daebff", padding:"70px 50px 50px 50px", maxWidth: "1400px", marginRight:{md:"0",lg:"50px" }}}>
 
-            <Typography  color="primary" mb={"20px"} sx={{ fontWeight: "600", lineHeight:"1"}} component={motion.div}
-              initial={{ y:50, opacity: 0}}
-              whileInView={{ y:0, opacity: 1}}
-              transition={{ duration: 1, type: "just"}}
-              viewport={{ once: true }}
-            >FINANZDIENSTLEISTUNG</Typography>
 
             <Typography variant='h2' mb={"30px"} sx={{color: "black", fontWeight: "600", lineHeight: "1.2em", letterSpacing:"7px", fontSize:{xs:"1.5rem", sm:"2rem", md:"3rem"}}} component={motion.div}
               initial={{ y:50, opacity: 0}}
               whileInView={{ y:0, opacity: 1}}
               transition={{ duration: 1,delay: 0.2, type: "just"}}
               viewport={{ once: true }}
-            >FINANCIAL SERVICES</Typography>
+            >Für Unternehmen</Typography>
 
             <motion.div style={{position: "relative", marginBottom: "10px"}}
                 initial={{ y:50, opacity: 0}}
@@ -31,7 +25,7 @@ const Section5 = () => {
                 viewport={{ once: true }}
             >
               <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"} }} />
-              <Typography mb={"0.9rem"}  sx={{marginLeft:{xs: "0", sm: "60px"},overflowWrap: "normal", fontSize: "15px" , color: "black"}} variant='body1'>Die DEUTSCHE FINANCE GROUP verfügt über langjährige Erfahrung in der Finanzdienstleistung und über eine exzellente Fachkompetenz im Bereich der institutionellen Kapitalanlage. Zur Kernkompetenz im Bereich Financial Services gehört das Marketing- und die Platzierung von institutionellen Finanzstrategien bei privaten, professionellen und institutionellen Investoren. </Typography>
+              <Typography mb={"0.9rem"}  sx={{marginLeft:{xs: "0", sm: "60px"},overflowWrap: "normal", fontSize: "15px" , color: "black"}} variant='body1'>Das Belatel Institut verfügt über beste Kontakte zu Bewerbern und Unternehmen im In und Ausland.</Typography>
               <Typography variant='button' color="primary" sx={{marginLeft:{xs: "0", sm: "60px"},fontSize: "16px", fontWeight:"500", letterSpacing:"3px"}}>ERFAHREN SIE MEHR</Typography>
             </motion.div>
           </div>

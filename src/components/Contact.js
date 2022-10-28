@@ -122,7 +122,7 @@ export const Contact = () => {
                         <Stack>
                             <Typography variant='h5' color="primary" sx={{ mb: 2, fontWeight: 600 }}>CONTACT</Typography>
                             <Typography variant='p' sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', mb: 1, fontSize:"20px"}}>
-                                <WhatsAppIcon sx={{marginRight: "10px"}}/> +123-456-7890
+                                <WhatsAppIcon sx={{marginRight: "10px"}}/> +49 176-20932568
                             </Typography>
                             <Typography variant='p' sx={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', mb: 2, fontSize:"20px"}}>
                                 <MailIcon sx={{marginRight: "10px"}}/>belatel@amail.com

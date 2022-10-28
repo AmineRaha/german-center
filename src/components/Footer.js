@@ -28,7 +28,7 @@ const Footer = () => {
         </Stack>
 
         <Stack sx={{color:"#212a47", marginTop:"50px", width:"100%", textAlign:"right"}}>
-            copyright
+            Designed by Amine RAHA
         </Stack>
 
       </Stack>

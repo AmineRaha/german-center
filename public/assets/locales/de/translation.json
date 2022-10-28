@@ -1,9 +1,37 @@
 {
     "welcome": "WILLKOMMEN IM",
-    "wir_verbinden": "Wir verbinden Menschen",
+    "wir_verbinden": " - Wir verbinden Menschen - ",
+    "belatel_institut": "Belatel Institut",
+    "read_more": "Erfahren Sie Mehr",
+
+    "institut": "Institut",
     "wer_sind_wir": "Wer sind wir?",
     "about_text1": "Wir bieten unseren Kunden moderne, maßgeschneiderte und effiziente Rekrutierungslösungen. Als Bewerber und als Unternehmen finden Sie bei uns ein breites Angebot an modernen Mitarbeiterlösungen.",
     "about_text2": "Unsere Personalagentur hilft Ihnen, die Effizienz und damit den Wettbewerb aufrechtzuerhalten.",
     "about_text3": "Wir unterstützen Unternehmen bei der Suche nach geeigneten und qualifizierten Mitarbeitern, erleichtern Ihnen den oft langwierigen Prozess der Stellenbesetzung und sorgen so dafür, dass Ihr Unternehmen ohne Risiko von kompetenten Mitarbeitern profitieren kann.",
-    "about_text4": "Für Bewerber, die in Deutschland arbeiten möchten, sind wir eine erfahrene Agentur, die für jeden Arbeitnehmer oder angehenden Studenten eine passende Stelle finden kann. Außerdem unterstützen wir Studierende bei der Suche nach einer Berufsausbildung in Deutschland"
+    "about_text4": "Für Bewerber, die in Deutschland arbeiten möchten, sind wir eine erfahrene Agentur, die für jeden Arbeitnehmer oder angehenden Studenten eine passende Stelle finden kann. Außerdem unterstützen wir Studierende bei der Suche nach einer Berufsausbildung in Deutschland",
+    "strategie": "Strategie",
+    "about_readmore_text1": "Unser Ziel ist es, durch unsere Unternehmenskultur, welche auf den Grundpfeilern eines gemeinschaftlichen, innovativen Miteinanders steht, Menschen und Kulturen miteinander zu verknüpfen.",
+    "about_readmore_text2": "Durch unsere ausgezeichnete Vernetzung mit der marokkanischen Kultur, sind wir bestens vertraut mit den rechtlichen Voraussetzungen, persönlichen Ansprüchen und Kommunikationswegen.",
+    "about_readmore_text3": "In Deutschland spricht unsere enge Zusammenarbeit mit Unternehmen, Behörden, Schulen und Krankenversicherungen für sich.",
+    "about_readmore_text4": "Besonderes Augenmerk legen wir auf das gegenseitige Verständnis. Daher steht die Kenntnis der Deutsche Sprache als Auswahlkriterium für uns mit an erster Stelle.",
+    "about_readmore_text5": "Das Sprachkenntnisniveau von zukünftigen Mitarbeitern uns Auszubildenden muss daher mindestens auf dem Niveau B1/B2 sein.",
+
+    "section7_title": "Der Weg vom Bewerber zum Arbeitnehmer",
+    "section7_text1": "Ist uns der interkulturelle Austausch und die Verständigung wichtig. Im Vorfeld lernen wir die Bewerber in ihrem Heimatland, auch im Kreise ihrer Familie kennen und prüfen so persönlich, ob die Charaktere und persönlichen Einstellungen mit den Anfordernissen unserer Kunden und Unternehmen in Deutschland kompatibel sind.",
+    "section7_text2": "Wir überprüfen sämtliche Zeugnisse und Diplome auf deren Richtigkeit und lassen unsere Schüler je nach Ausbildungswunsch Praktika noch im Heimatland absolvieren. ",
+    "section7_text3": "Diese Praktika sollen sicherstellen, dass auch der Ausbildungswunsch, der passende Beruf für unsere/n Schüler/in ist. Außerdem legen wir Wert darauf, dass alle unsere Schüler in Marokko ein Abitur absolviert, welches mit dem Fachabitur in Deutschland zu vergleichen ist.",
+    "section7_text4": "Sind alle unsere Vorrausetzungen erfüllt, unterstützen wir unsere Schüler und Bewerber bei der Ausbildungs- / Stellensuche in Deutschland.",
+    "section7_text5": "Wir sind vertraut mit der heimischen Arbeitsmarktsituation, nehmen Kontakt zu den Unternehmen auf, vereinbaren Vorstellungsgespräche (auch online) und sind dabei immer unterstützend an ihrer Seite.",
+    "section7_text6": "Entschließt sich ein Unternehmen einem Schüler von uns einen Ausbildungsplatz anzubieten, unterstützen wir die Unternehmen und zukünftigen Mitarbeiter bei Behördengängen und stellen sicher, dass sämtliche rechtliche Voraussetzungen  erfüllt werden.",
+    "section7_text7": "Auch unterstützen wir die Auszubildenden bei der Wohnungssuche und kümmern uns um die Krankenversicherungen und stellen Anträge bei den Fachkräftezentralen oder Ausländerbehörden für das beschleunigte Fachkräfteverfahren nach §81a Aufenth G. ",
+    "section7_text8": "Vor Ort in Marokko begleiten wir unsere Schüler und Mitarbeiter auf Ihrem weiteren Weg zur Visa Beantragung bei der Deutschen Botschaft in Rabat. ",
+    "section7_text9": "Darüber hinaus sind wir für die Unternehmen als auch für unsere Schüler über die gesamte Ausbildungs- und Anstellungsdauer ein vertrauensvoller Ansprechpartner bei Problemen oder Schwierigkeiten.",
+    "section7_text10": "Nehmen Sie Kontakt zu uns auf, wir freuen uns auf eine professionelle & lösungsorientierte Zusammenarbeit!",
+
+    "section4_title": "In Deutschland arbeiten – Was muss ich wissen?",
+    "section4_text1": "Da für die Bearbeitung der entsprechenden Anträge verschiedene Stellen zuständig sind und Zuwanderer ohne Unterstützung kaum eine Chance haben, sich in diesem Ämterdschungel zurechtzufinden, ist mit dem Anerkennungsgesetz auch ein breites Informations- und Beratungsangebot entstanden. Einen Überblick über die zentralen Fragen und Anlaufstellen rund um die Anerkennung von Studium, Berufsausbildung sowie Schulabschluss vermitteln die Infografiken, die das Goethe-Institut auf seinem Portal Mein Weg nach Deutschland zur Verfügung stellt",
+    "section4_readmore_text1": "Fachkräfte, die sich noch in ihrem Heimatland befinden und nicht wissen, in welchem Bundesland sie sich niederlassen möchten, finden auf dem „Portal Make it in Germany“ Informationen über das Arbeiten in Deutschland. \n Das Portal wird von der Zentralen Auslands- und Fachvermittlung (ZAV) der Bundesagentur für Arbeit (BA) betrieben. Im Virtuellen Welcome Center der ZAV bekommen die Fachkräfte darüber hinaus Antworten auf ihre individuellen Fragen.",
+    "section4_readmore_text2": "\"Fachkräfte, die sich an uns wenden, sind häufig noch in der Orientierungsphase und verschaffen sich einen Überblick darüber, welche Aspekte sie im Zuge der Migration berücksichtigen müssen. Unsere Aufgabe ist es, ihnen ein realistisches Bild zu vermitteln, um Enttäuschungen vorzubeugen. Dazu gehört auch, sie für die Frage der Anerkennung zu sensibilisieren. Denn vielen ist zu diesem Zeitpunkt noch gar nicht bewusst, dass sie sich darum kümmern müssen\", betont Dr. Beate Raabe von der Pressestelle der ZAV."
+
 }
