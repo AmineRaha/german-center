@@ -45,7 +45,7 @@ const About = () => {
                 <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600",textTransform:"uppercase", lineHeight: "1.2em", letterSpacing:"7px", fontSize:{xs:"1.5rem", sm:"2rem", md:"3rem"}}}>{t("wer_sind_wir")}</Typography>
                 <div style={{position: "relative", marginBottom: "10px"}}>
                   
-                  <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"} }} />
+                  <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"}, marginTop:"6px" }} />
                   <Typography mb={"0.9rem"} sx={{marginLeft:{xs: "0", sm: "60px"}, overflowWrap: "normal", fontSize: "15px", color: "white"}} variant='body1'> {t("about_text1")} </Typography>
                   <Typography mb={"0.9rem"} sx={{marginLeft:{xs: "0", sm: "60px"}, overflowWrap: "normal", fontSize: "15px", color: "white"}} variant='body1'>{t("about_text2")}</Typography>
                   <Typography mb={"20px"} sx={{marginLeft:{xs: "0", sm: "60px"}, overflowWrap: "normal", fontSize: "15px", color: "white"}} variant='body1'>{t("about_text3")}</Typography>

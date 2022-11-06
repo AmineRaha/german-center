@@ -92,7 +92,7 @@ const Section4 = () => {
              variants={childVarient}
            
             >
-              <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"} }} />
+              <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"}, marginTop:"6px" }} />
               <Typography mb={"1.5rem"} sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, overflowWrap: "normal", fontSize: i18n.language === "ar" ? "19px":"16px", color: "white"}} variant='body1'> {t("section4_text1")} </Typography>
               
 
@@ -384,7 +384,7 @@ const Section4 = () => {
 
               <Box sx={modalBlock}>
                 <Box sx={modalStyle}>
-                  <IconButton color="secondary" sx={{position:"absolute", right:"2%"}} onClick={handleClose}>
+                  <IconButton color="secondary" sx={{position:"absolute", right: i18n.language === "ar" ? "95%" : "2%"}} onClick={handleClose}>
                     <CloseIcon />
                   </IconButton>
                 <Fade in={open}>
@@ -399,7 +399,7 @@ const Section4 = () => {
                         <ListItemIcon sx={{minWidth:"15px", marginTop:"13px"}}>
                           <CircleIcon sx={{color:"white", fontSize:"7px"}} />
                         </ListItemIcon>
-                        <ListItemText
+                        <ListItemText sx={{ textAlign: i18n.language === "ar" ? "right" : "left"}}
                           primary={<>
                             <Typography>
                               {t("reports_text1")} <br/>
@@ -453,7 +453,7 @@ const Section4 = () => {
                         <ListItemIcon sx={{minWidth:"15px", marginTop:"13px"}}>
                           <CircleIcon sx={{color:"white", fontSize:"7px"}} />
                         </ListItemIcon>
-                        <ListItemText
+                        <ListItemText sx={{ textAlign: i18n.language === "ar" ? "right" : "left"}}
                           primary={<>
                             <Typography sx={{marginBottom:"1rem"}}>
                               {t("reports_text12")} <br/>
