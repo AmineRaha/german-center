@@ -59,7 +59,7 @@ const Section4 = () => {
 
   const modalStyle = {
     position: 'relative',
-    bgcolor: '#040e2d',
+    bgcolor: 'secondary.main',
     border: '0',
     width:"99vw",
     
@@ -70,8 +70,8 @@ const Section4 = () => {
 
 
   return (
-    <section style={{width:"100%", backgroundColor: "#040e2d", paddingTop:"50px"}}>
-        <Stack direction="column" justifyContent="space-evenly" spacing={0} p={5} sx={{ overflowX: "visible", direction: i18n.language === "ar" ? "rtl" : "ltr", overflowWrap:"anywhere"}} component={motion.div}
+    <Box sx={{width:"100%", backgroundColor: "secondary.main", paddingTop:"50px"}}>
+        <Stack direction="column" justifyContent="space-evenly" spacing={0} px={5} py={2} sx={{ overflowX: "visible", direction: i18n.language === "ar" ? "rtl" : "ltr", overflowWrap:"anywhere"}} component={motion.div}
           viewport={{ once: true }}
           variants={parentVarient}
           whileInView="visible"
@@ -82,18 +82,19 @@ const Section4 = () => {
             >
               {t("section4_title1")}
             </Typography>
-          <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600", lineHeight: "1.2em", letterSpacing: i18n.language === "ar" ? "0px" : "7px", textTransform: "uppercase", fontSize:{xs:"1.5rem", sm:"2rem", md:"3rem"}, overflowWrap:"anywhere"}} component={motion.div}
-               variants={childVarient}
-             
-          >{t("section4_title2")}</Typography>
+          <Typography variant='h3' mb={"30px"} component={motion.div} variants={childVarient}
+            sx={{color: "white", fontWeight: "600", lineHeight: "1.2em", letterSpacing: i18n.language === "ar" ? "0px" : "7px", textTransform: "uppercase", fontSize:{xs:"1.5rem", sm:"2rem", md:"3rem"}, overflowWrap:"anywhere"}}
+          >
+              {t("section4_title2")}
+          </Typography>
           <Stack>
             <motion.div style={{position: "relative", marginBottom: "10px"}}
              component={motion.div}
              variants={childVarient}
            
             >
-              <Container sx={{ position: "absolute", top: "7px", backgroundColor: "#808d94", height: "2px", width:"45px", display:{xs:"none", sm:"block"}, marginTop:"6px" }} />
-              <Typography mb={"1.5rem"} sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, overflowWrap: "normal", fontSize: i18n.language === "ar" ? "19px":"16px", color: "white"}} variant='body1'> {t("section4_text1")} </Typography>
+              <Container sx={{ position: "absolute", top: "7px", backgroundColor: "primary.dark", height: "2px", width:"15px", display:{xs:"block", sm:"block"}, marginTop:"3px", padding:"0" }} />
+              <Typography mb={"1.5rem"} sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "25px", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "25px", sm: "60px"} : 0, overflowWrap: "normal", fontSize: i18n.language === "ar" ? "19px":"16px", color: "white"}} variant='body1'> {t("section4_text1")} </Typography>
               
 
 
@@ -106,7 +107,7 @@ const Section4 = () => {
           </Stack>
           <motion.div
           >
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white", paddingX:"0"}} component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}} component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -124,7 +125,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}} component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}} component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -155,7 +156,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}} component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}} component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -173,7 +174,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}} component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}} component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -191,7 +192,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}}  component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}}  component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -209,7 +210,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}}  component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}}  component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -227,7 +228,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}}  component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}}  component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -245,7 +246,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}} component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}} component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -330,7 +331,7 @@ const Section4 = () => {
               </AccordionDetails>
             </Accordion>
 
-            <Accordion sx={{backgroundColor: "#040e2d", color:"white"}}  component={motion.div}
+            <Accordion sx={{backgroundColor: "secondary.light", color:"white", paddingX:"15px"}}  component={motion.div}
               variants={childVarient}
             >
               <AccordionSummary
@@ -362,8 +363,8 @@ const Section4 = () => {
             <Stack direction="row" justifyContent="flex-start" alignItems="center" onClick={handleOpen} sx={{"&:hover": {cursor:"pointer"}}} component={motion.div}
               variants={childVarient}
               >
-              <Typography variant='button' color="secondary" sx={{textTransform:"uppercase", fontSize: i18n.language === "ar" ? "20px":"16px", fontWeight:"500", letterSpacing: i18n.language === "ar" ? "0px" : "3px"}}>{t("reports")}</Typography>
-              <IconButton color="secondary" >
+              <Typography variant='button' color="primary.light" sx={{textTransform:"uppercase", fontSize: i18n.language === "ar" ? "20px":"16px", fontWeight:"500", letterSpacing: i18n.language === "ar" ? "0px" : "3px"}}>{t("reports")}</Typography>
+              <IconButton color="primary" >
                 <KeyboardArrowDownIcon sx={{rotate: i18n.language === "ar" ? "90deg" : "-90deg"}}/>
               </IconButton>
             </Stack>
@@ -384,12 +385,12 @@ const Section4 = () => {
 
               <Box sx={modalBlock}>
                 <Box sx={modalStyle}>
-                  <IconButton color="secondary" sx={{position:"absolute", right: i18n.language === "ar" ? "95%" : "2%"}} onClick={handleClose}>
+                  <IconButton color="primary" sx={{position:"absolute", right: i18n.language === "ar" ? "95%" : "2%"}} onClick={handleClose}>
                     <CloseIcon />
                   </IconButton>
                 <Fade in={open}>
                     
-                    <Stack backgroundColor={"#040e2d"} pt={"20px"} pb={"20px"} pr={"30px"} pl={"20px"} sx={{width:"100%", marginRight:{md:0, lg:2}}}>
+                    <Stack backgroundColor={"secondary.main"} pt={"20px"} pb={"20px"} pr={"30px"} pl={"20px"} sx={{width:"100%", marginRight:{md:0, lg:2}}}>
 
                     <Typography variant='h3' mb={"30px"} sx={{color: "white", fontWeight: "600", textTransform:"uppercase", lineHeight: "1.2em", letterSpacing: i18n.language === "ar" ? "0px" : "7px", fontSize:{xs:"1.25rem", sm:"1.75rem", md:"2rem"}, overflowWrap: "anywhere"}}>{t("reports")}</Typography>
 
@@ -481,11 +482,11 @@ const Section4 = () => {
                   </Box>
                 </Box>
                 
-            </Modal>
+          </Modal>
 
             
         </Stack>
-    </section>
+    </Box>
   )
 }
 

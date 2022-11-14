@@ -10,16 +10,16 @@ import Footer from './components/Footer';
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#3d417b',
-      main: '#0b1b4e',
-      dark: '#000026',
-      contrastText: '#fff',
+      light: '#efdcd5',
+      main: '#bcaaa4',
+      dark: '#8c7b75',
+      contrastText: '#000000',
     },
     secondary: {
-      light: '#daebff',
-      main: '#a7b9ff',
-      dark: '#7589cc',
-      contrastText: '#000',
+      light: '#7c5e57',
+      main: '#4f342e',
+      dark: '#260e04',
+      contrastText: '#ffffff',
     },
   },
 });
