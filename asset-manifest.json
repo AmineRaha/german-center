@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/german-center/static/css/main.32a3f4db.css",
-    "main.js": "/german-center/static/js/main.46107267.js",
+    "main.css": "/german-center/static/css/main.f228ae0c.css",
+    "main.js": "/german-center/static/js/main.8dc07a23.js",
+    "static/media/_ABP3387.jpg": "/german-center/static/media/_ABP3387.bc5a2dffb132ed86d123.jpg",
     "static/media/_ABP3436.jpg": "/german-center/static/media/_ABP3436.b469dda0b93cce7aa7c6.jpg",
     "static/media/_ABP3439.jpg": "/german-center/static/media/_ABP3439.a19a59f9c973dfc82528.jpg",
     "static/media/_ABP3431.jpg": "/german-center/static/media/_ABP3431.a19b02958fa78ba29ce6.jpg",
     "static/media/_ABP3452.jpg": "/german-center/static/media/_ABP3452.eebfcaacdc008176ddf1.jpg",
     "static/media/_ABP3459.jpg": "/german-center/static/media/_ABP3459.0f4f7476de9e30b86323.jpg",
-    "static/media/logo.svg": "/german-center/static/media/logo.88d7375cf4344a00674ce0632fb33b6f.svg",
-    "static/media/logo3.svg": "/german-center/static/media/logo3.3c8bc3a2b11cdbf09de5b4e52647f88b.svg",
+    "static/media/logo.svg": "/german-center/static/media/logo.2bdf113d79a11905b881a1c0d41095aa.svg",
+    "static/media/logo3.svg": "/german-center/static/media/logo3.7471a979905150a10e630873c3bd82b7.svg",
     "index.html": "/german-center/index.html",
     "static/media/getFetch.cjs": "/german-center/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.32a3f4db.css.map": "/german-center/static/css/main.32a3f4db.css.map",
-    "main.46107267.js.map": "/german-center/static/js/main.46107267.js.map"
+    "main.f228ae0c.css.map": "/german-center/static/css/main.f228ae0c.css.map",
+    "main.8dc07a23.js.map": "/german-center/static/js/main.8dc07a23.js.map"
   },
   "entrypoints": [
-    "static/css/main.32a3f4db.css",
-    "static/js/main.46107267.js"
+    "static/css/main.f228ae0c.css",
+    "static/js/main.8dc07a23.js"
   ]
 }
