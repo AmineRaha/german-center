@@ -3,7 +3,7 @@ import { Backdrop, Box, Container, Fade, IconButton, Modal, Stack, Typography } 
 import { motion } from "framer-motion";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-import bg from "../assets/images/pictures/_ABP3459.jpg";
+import bg from "../assets/images/pictures/pic3.jpg";
 
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n';

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-import bg from "../assets/images/pictures/_ABP3439.jpg";
+import bg from "../assets/images/pictures/pic1.jpg";
 
 import i18n from '../i18n';
 

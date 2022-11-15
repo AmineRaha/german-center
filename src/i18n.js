@@ -16,9 +16,11 @@ i18n
         caches: ['cookie'],
     },
     backend:{
-        loadPath: '/assets/locales/{{lng}}/translation.json',
+        loadPath: './assets/locales/{{lng}}/translation.json',
+        
     },
   });
+  console.log(i18n);
 
 
 export default i18n;

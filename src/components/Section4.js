@@ -62,6 +62,10 @@ const Section4 = () => {
     bgcolor: 'secondary.main',
     border: '0',
     width:"99vw",
+
+    '&:focus-visible': {
+      outline: 'none',
+    },
     
     boxShadow: 24,
     p: {xs:1, sm:2, md:4},
