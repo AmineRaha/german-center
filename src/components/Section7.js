@@ -4,7 +4,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next';
 import i18n from '../i18n';
 
-import bg from "../assets/images/pictures/_ABP3436.jpg";
+import bg from "../assets/images/pictures/pic2.jpg";
 
 const Section7 = () => {
 

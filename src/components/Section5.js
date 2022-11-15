@@ -4,7 +4,7 @@ import { Backdrop, Box, Container, Fade, IconButton, Modal, Stack, Typography } 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CloseIcon from '@mui/icons-material/Close';
 
-import bg from "../assets/images/pictures/_ABP3452.jpg";
+import bg from "../assets/images/pictures/pic4.jpg";
 
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next';
