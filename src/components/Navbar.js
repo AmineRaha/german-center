@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { Stack, Grid, Typography, Drawer, Button, ListItem, Box, List, useMediaQuery } from '@mui/material'
+import { Stack,  Button, Box,  useMediaQuery } from '@mui/material'
 import Cookies from 'js-cookie';
 
 import logo from "../assets/images/logo/logo.svg";
@@ -10,31 +10,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
 
-    const [open, setOpen] = useState(false);
 
-    const getList = () => (
-      <div style={{ width: 400}} onClick={() => setOpen(false)}>
-
-    
-        <Grid container justifyContent="flex-end">
-            <Typography variant='h4' sx={{ margin: 3}}>MENU</Typography>
-        </Grid>
-
-        <List>
-            <ListItem >
-                <Typography variant='h6'>ITEM</Typography>
-            </ListItem>
-            <ListItem>
-                <Typography variant='h6'>ITEM</Typography>
-            </ListItem>
-            <ListItem>
-                <Typography variant='h6'>ITEM</Typography>
-            </ListItem>
-        </List>
-
-
-      </div>
-    );
 
     const {t} = useTranslation();
     const currentLang=Cookies.get('i18next') || 'de';
@@ -70,10 +46,7 @@ const Navbar = () => {
                 </Button>
                 </li>
             </ul>
-            {/*<Button color='primary' variant='contained' onClick={() => setOpen(true)} p={0} sx={{height: "45px"}}><MenuIcon color="secondary" sx={{fontSize: "32px"}}/></Button>*/}
-            <Drawer open={open} anchor={"right"} onClose={() => setOpen(false)} sx={{justifyContent: "flex-end"}}>
-                {getList()}
-            </Drawer>
+
         </Stack>
     </Box>
 
