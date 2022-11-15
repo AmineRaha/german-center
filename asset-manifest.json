@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/german-center/static/css/main.f228ae0c.css",
+    "main.css": "/german-center/static/css/main.32a3f4db.css",
     "main.js": "/german-center/static/js/main.ec0ad2d8.js",
     "static/media/_ABP3387.jpg": "/german-center/static/media/_ABP3387.bc5a2dffb132ed86d123.jpg",
     "static/media/_ABP3436.jpg": "/german-center/static/media/_ABP3436.b469dda0b93cce7aa7c6.jpg",
@@ -12,11 +12,11 @@
     "static/media/logo3.svg": "/german-center/static/media/logo3.7471a979905150a10e630873c3bd82b7.svg",
     "index.html": "/german-center/index.html",
     "static/media/getFetch.cjs": "/german-center/static/media/getFetch.c780682470504fffbd04.cjs",
-    "main.f228ae0c.css.map": "/german-center/static/css/main.f228ae0c.css.map",
+    "main.32a3f4db.css.map": "/german-center/static/css/main.32a3f4db.css.map",
     "main.ec0ad2d8.js.map": "/german-center/static/js/main.ec0ad2d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f228ae0c.css",
+    "static/css/main.32a3f4db.css",
     "static/js/main.ec0ad2d8.js"
   ]
 }
