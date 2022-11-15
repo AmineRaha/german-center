@@ -57,7 +57,7 @@ const Section5 = () => {
     <Stack direction="row" justifyContent="space-evenly" spacing={0} py={5} sx={{ overflowX: "clip"}}>
       
         <Stack xs={6}  direction="row" justifyContent="flex-end" alignItems="center" sx={{ width:{md:"auto", lg:"100%"}, zIndex:"1", position: "relative", marginRight: {md:"0",lg:"-20%" }, paddingY:"4rem"}}>
-          <Box sx={{backgroundColor: "primary.main", padding:{xs:"25px", sm:"30px",md:"70px 50px 50px 50px"}, maxWidth: "1400px", minWidth:{sm:"auto", md:"1000px"}, borderRadius:"4px",boxShadow: "6px 5px 5px 0px rgb(0 0 0 / 15%)"}}>
+          <Box sx={{backgroundColor: "primary.main", padding:{xs:"25px", sm:"30px",md:"70px 50px 50px 50px"}, maxWidth: "1400px", minWidth:{sm:"auto", md:"1000px"}, borderRadius:"4px",boxShadow: "6px 5px 5px 0px rgb(0 0 0 / 15%)", direction: i18n.language === "ar" ? "rtl" : "ltr"}}>
 
 
 
@@ -73,8 +73,8 @@ const Section5 = () => {
                 transition={{ duration: 1,delay: 0.2, type: "just"}}
                 viewport={{ once: true }}
             >
-              <Container sx={{ position: "absolute", top: "7px", backgroundColor: "secondary.dark", height: "2px", width:"15px", display:{xs:"block", sm:"block"}, marginTop:"1px", padding:"0" }} />
-              <Typography mb={"0.9rem"}  sx={{marginLeft:{xs: "25px", sm: "60px"},overflowWrap: "normal", fontSize: "15px" , color: "black"}} variant='body1'>{t("section5_text")}.</Typography>
+              <Container sx={{ position: "absolute", top: "7px", backgroundColor: "secondary.dark", height: "2px", width:"15px", display:{xs:"block", sm:"block"}, marginTop:"2px", padding:"0" }} />
+              <Typography mb={"0.9rem"}  sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "25px", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "25px", sm: "60px"} : 0, overflowWrap: "normal", fontSize: i18n.language === "ar" ? "19px":"16px", color: "black"}} variant='body1'>{t("section5_text")}</Typography>
               <Stack direction="row" justifyContent="flex-start" alignItems="center" onClick={handleOpen} sx={{"&:hover": {cursor:"pointer"}}}>
                 <Typography variant='button' color="secondary.dark" sx={{marginLeft: i18n.language === "ar" ? 0 : {xs: "0", sm: "60px"}, marginRight: i18n.language === "ar" ? {xs: "0", sm: "60px"} : 0, textTransform:"uppercase", fontSize: i18n.language === "ar" ? "20px":"16px", fontWeight:"500", letterSpacing: i18n.language === "ar" ? "0px" : "3px"}}>{t("read_more")}</Typography>
                 <IconButton aria-label="delete" color="secondary" >
