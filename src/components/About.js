@@ -11,7 +11,6 @@ import i18n from '../i18n';
 const About = () => {
 
   const {t} = useTranslation();
-
   const islg = useMediaQuery("(max-width:1200px)");
 
   var Stack1Anim = {};

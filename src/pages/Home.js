@@ -10,10 +10,11 @@ import Section5 from '../components/Section5';
 import Section6 from '../components/Section6';
 import Section7 from '../components/Section7';
 import Team from '../components/Team';
-import { Contact } from '../components/Contact';
+import { Contact2 } from '../components/Contact2';
+import Form from '../components/Form';
 
 
-
+//8-18 12-2 24/7
 const Home = () => {
   return (
     <Stack alignItems="center" justifyContent={"center"}  >
@@ -26,8 +27,7 @@ const Home = () => {
       <Section4/>
       <Section5/>
       <Section6/>
-      <Team/>
-      <Contact/>
+      <Contact2/>
 
     </Stack>
   )
