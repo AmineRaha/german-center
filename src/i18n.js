@@ -16,12 +16,8 @@ i18n
         caches: ['cookie'],
     },
     backend:{
-<<<<<<< Updated upstream
-        loadPath: 'assets/locales/{{lng}}/translation.json',
+        loadPath: '/german-center/assets/locales/{{lng}}/translation.json',
         
-=======
-      loadPath: '/assets/locales/{{lng}}/translation.json',
->>>>>>> Stashed changes
     },
   });
   console.log(i18n);
