@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/german-center/static/css/main.e0e71469.css",
-    "main.js": "/german-center/static/js/main.a56e8b53.js",
+    "main.js": "/german-center/static/js/main.b96d23ae.js",
     "static/media/background.jpg": "/german-center/static/media/background.bc5a2dffb132ed86d123.jpg",
     "static/media/pic2.jpg": "/german-center/static/media/pic2.b469dda0b93cce7aa7c6.jpg",
     "static/media/pic1.jpg": "/german-center/static/media/pic1.a19a59f9c973dfc82528.jpg",
@@ -13,10 +13,10 @@
     "index.html": "/german-center/index.html",
     "static/media/getFetch.cjs": "/german-center/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.e0e71469.css.map": "/german-center/static/css/main.e0e71469.css.map",
-    "main.a56e8b53.js.map": "/german-center/static/js/main.a56e8b53.js.map"
+    "main.b96d23ae.js.map": "/german-center/static/js/main.b96d23ae.js.map"
   },
   "entrypoints": [
     "static/css/main.e0e71469.css",
-    "static/js/main.a56e8b53.js"
+    "static/js/main.b96d23ae.js"
   ]
 }
