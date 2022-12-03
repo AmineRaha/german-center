@@ -17,7 +17,7 @@ import Form from '../components/Form';
 //8-18 12-2 24/7
 const Home = () => {
   return (
-    <Stack alignItems="center" justifyContent={"center"}  >
+    <Stack alignItems="center" justifyContent={"center"}>
 
       <Welcome/>
       <About/>
@@ -27,6 +27,7 @@ const Home = () => {
       <Section4/>
       <Section5/>
       <Section6/>
+      <Form/>
       <Contact2/>
 
     </Stack>

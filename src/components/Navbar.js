@@ -10,9 +10,6 @@ import './Navbar.scss';
 
 const Navbar = () => {
 
-
-
-    const {t} = useTranslation();
     const currentLang=Cookies.get('i18next') || 'de';
 
     const largeScreen = useMediaQuery(theme => theme.breakpoints.up('sm'));

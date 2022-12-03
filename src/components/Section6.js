@@ -51,7 +51,7 @@ const Section6 = () => {
   };
 
   return (
-    <section style={{width:"100%", backgroundColor: "white", paddingTop:"20px", paddingBottom:"70px"}}>
+    <section style={{width:"100%", backgroundColor: "white", paddingTop:"20px", paddingBottom:"20px"}}>
     <Stack direction="row" justifyContent="space-evenly" spacing={0} py={5} sx={{ overflowX: "clip"}}>
 
         <Stack sx={{ width: {md:"30%", lg:"100%"}, display:{xs:"none" , lg:"block"}, backgroundImage: `url(${bg})`,backgroundRepeat: "no-repeat",backgroundSize: "cover" }}>

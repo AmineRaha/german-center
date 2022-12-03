@@ -53,7 +53,7 @@ const Section5 = () => {
   };
 
   return (
-    <section style={{width:"100%", backgroundColor: "white", paddingTop:"50px", paddingBottom:"50px"}}>
+    <section style={{width:"100%", backgroundColor: "white"}}>
     <Stack direction="row" justifyContent="space-evenly" spacing={0} py={5} sx={{ overflowX: "clip"}}>
       
         <Stack xs={6}  direction="row" justifyContent="flex-end" alignItems="center" sx={{ width:{md:"auto", lg:"100%"}, zIndex:"1", position: "relative", marginRight: {md:"0",lg:"-20%" }, paddingY:"4rem"}}>
