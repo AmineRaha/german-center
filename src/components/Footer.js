@@ -1,7 +1,7 @@
-import { Box, IconButton, Stack, Typography, useMediaQuery } from '@mui/material'
+import { Box, IconButton, Link, Stack, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 import logo from "../assets/images/logo/logo3.svg";
 
@@ -25,13 +25,20 @@ const Footer = () => {
 
 
             <Stack direction={"row"}   alignItems={"center"} sx={{textAlign:{xs:"center",sm:"right"},justifyContent:{xs:"center",sm:"flex-end"}, marginTop:{xs:"25px"}, width:"100%"}}>
-                                <IconButton>
-                                    <FacebookIcon sx={{color:"white", fontSize:"40px"}}/>
-                                </IconButton>
-                                <IconButton>
-                                    <LinkedInIcon sx={{color:"white", fontSize:"40px"}}/>
-                                </IconButton>
-                            </Stack>
+
+              <Link href="https://www.facebook.com/profile.php?id=100088180249057" target={"_blank"} sx={{textDecoration:"none"}}>
+                <IconButton>
+                    <FacebookIcon sx={{color:"white", fontSize:"40px"}}/>
+                </IconButton>
+              </Link>
+
+              <Link href="https://www.instagram.com/belatel.institut/" target={"_blank"} sx={{textDecoration:"none"}}>
+                <IconButton>
+                    <InstagramIcon sx={{color:"white", fontSize:"40px"}}/>
+                </IconButton>
+              </Link>
+              
+            </Stack>
 
         </Stack>
 

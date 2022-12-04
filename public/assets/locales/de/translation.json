@@ -29,6 +29,11 @@
     "section7_text9": "Darüber hinaus sind wir für die Unternehmen als auch für unsere Schüler über die gesamte Ausbildungs- und Anstellungsdauer ein vertrauensvoller Ansprechpartner bei Problemen oder Schwierigkeiten.",
     "section7_text10": "Nehmen Sie Kontakt zu uns auf, wir freuen uns auf eine professionelle & lösungsorientierte Zusammenarbeit!",
 
+    "numbers1.1":"Personal-",
+    "numbers1.2":"Vermittlung",
+    "numbers2":"Angestellte",
+    "numbers3":"Unternehmen",
+
     "section3_title": "In Deutschland arbeiten – Was muss ich wissen?",
     "section3_text1": "Da für die Bearbeitung der entsprechenden Anträge verschiedene Stellen zuständig sind und Zuwanderer ohne Unterstützung kaum eine Chance haben, sich in diesem Ämterdschungel zurechtzufinden, ist mit dem Anerkennungsgesetz auch ein breites Informations- und Beratungsangebot entstanden. Einen Überblick über die zentralen Fragen und Anlaufstellen rund um die Anerkennung von Studium, Berufsausbildung sowie Schulabschluss vermitteln die Infografiken, die das Goethe-Institut auf seinem Portal Mein Weg nach Deutschland zur Verfügung stellt",
     "section3_readmore_text1": "Fachkräfte, die sich noch in ihrem Heimatland befinden und nicht wissen, in welchem Bundesland sie sich niederlassen möchten, finden auf dem „Portal Make it in Germany“ Informationen über das Arbeiten in Deutschland. \n Das Portal wird von der Zentralen Auslands- und Fachvermittlung (ZAV) der Bundesagentur für Arbeit (BA) betrieben. Im Virtuellen Welcome Center der ZAV bekommen die Fachkräfte darüber hinaus Antworten auf ihre individuellen Fragen.",
@@ -105,8 +110,24 @@
     "section6_readmore_text6":"Selbstverständlich unterstützen wir Euch auch bei dem Visa Antrag im deutschen Konsulat. ",
     "section6_readmore_text7":"Zu guter Letzt begleiten wir Euch noch eine Zeitlang in Deutschland, und unterstützen Euch bei allen Fragen. Gerne kann jeder, der die deutsche Sprache lernen möchte, einmal in einen unserer Online Kurse reinschnuppern. Hierzu meldet ihr Euch ganz unverbindlich und kostenlos zu einer Probestunde unter folgender. ",
 
+    "form_title": "Bewerbung",
     "form_text1": "Mit diesem Ablauf darfst Du rechnen: ",
     "form_text2": "Du hinterlässt Deine Kontaktdaten.",
     "form_text3": "Wir kontaktieren Dich telefonisch oder per E-Mail.",
-    "form_text4": "In einem anschließenden Gespräch kannst Du Deine Wünsche und Vorstellungen äußern, damit wir gemeinsam eine passende Stelle für Dich finden."
+    "form_text4": "In einem anschließenden Gespräch kannst Du Deine Wünsche und Vorstellungen äußern, damit wir gemeinsam eine passende Stelle für Dich finden.",
+    "form_input_name":"Vollständiger Name",
+    "form_input_email":"E-Mail Adresse",
+    "form_input_tel":"Telefonnummer",
+    "form_input_job":"Berufsbezichnung",
+    "form_input_exp":"Wie viel erfahrung hast du?",
+    "form_input_loc":"An welchem Standort möchtest Du eingesetzt werden?",
+    "send": "Senden",
+    "email_sent": "E-Mail erfolgreich gesendet",
+    "email_error":"Beim Senden ist ein Fehler aufgetreten",
+
+    "contact_us":"Kontaktieren uns",
+    "adresse":"ADRESSE",
+    "contact":"KONTAKT",
+    "openning_hours":"ÖFFNUNGSZEITEN",
+    "mon-fri":"Montag - Freitag"
 }

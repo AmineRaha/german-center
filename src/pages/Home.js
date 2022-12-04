@@ -9,7 +9,6 @@ import Section4 from '../components/Section4';
 import Section5 from '../components/Section5';
 import Section6 from '../components/Section6';
 import Section7 from '../components/Section7';
-import Team from '../components/Team';
 import { Contact2 } from '../components/Contact2';
 import Form from '../components/Form';
 
